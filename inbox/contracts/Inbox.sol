@@ -8,6 +8,10 @@ contract Inbox {
         message = initialMessage;
     }
 
+    // Set a new message (memory specified)
+    function setMessage(string memory newMessage) public {
+        message = newMessage;
+    }
 
     // Return the message (memory specified for return)
 }
