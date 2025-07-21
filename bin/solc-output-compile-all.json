@@ -1,0 +1,625 @@
+{
+    "contracts": {
+        "/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol": {
+            "SimpleStorage": {
+                "abi": [
+                    {
+                        "inputs": [],
+                        "name": "myFavoriteNumber",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "myFriend",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "favoriteNumber",
+                                "type": "uint256"
+                            },
+                            {
+                                "internalType": "string",
+                                "name": "name",
+                                "type": "string"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "name": "retrieve",
+                        "outputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "internalType": "uint256",
+                                "name": "_favoriteNumber",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "store",
+                        "outputs": [],
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "kind": "dev",
+                    "methods": {},
+                    "version": 1
+                },
+                "evm": {
+                    "bytecode": {
+                        "functionDebugData": {
+                            "allocate_memory": {
+                                "entryPoint": 427,
+                                "id": null,
+                                "parameterSlots": 0,
+                                "returnSlots": 1
+                            }
+                        },
+                        "generatedSources": [],
+                        "linkReferences": {},
+                        "object": "6080604052346101a7576100116101ab565b6007815261001d6101ab565b90600382526214185d60ea1b602083015281602082015251600155805160018060401b03811161019357600254600181811c91168015610189575b602082101461017557601f8111610112575b50602091601f82116001146100b2579181925f926100a7575b50508160011b915f199060031b1c1916176002555b60405161021290816101cb8239f35b015190505f80610083565b601f1982169260025f52805f20915f5b8581106100fa575083600195106100e2575b505050811b01600255610098565b01515f1960f88460031b161c191690555f80806100d4565b919260206001819286850151815501940192016100c2565b60025f527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace601f830160051c8101916020841061016b575b601f0160051c01905b818110610160575061006a565b5f8155600101610153565b909150819061014a565b634e487b7160e01b5f52602260045260245ffd5b90607f1690610058565b634e487b7160e01b5f52604160045260245ffd5b5f80fd5b60408051919082016001600160401b038111838210176101935760405256fe6080806040526004361015610012575f80fd5b5f3560e01c9081632e64cec1146101c3575080636057361d146101ab5780636d83bc571461018f5763af16a72314610048575f80fd5b3461018b575f36600319011261018b576001546040515f91600254928360011c60018516948515610181575b60208210861461016d57818552602085019590811561015457506001146100ff575b50829003601f01601f191682019267ffffffffffffffff8411838510176100eb576060928492836040528352604060208401525180918160408501528484015e5f828201840152601f01601f19168101030190f35b634e487b7160e01b5f52604160045260245ffd5b905060025f527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace5f905b82821061013e5750602091508301015f610096565b6001816020925483858901015201910190610129565b60ff1916865250151560051b830160200190505f610096565b634e487b7160e01b5f52602260045260245ffd5b90607f1690610074565b5f80fd5b3461018b575f36600319011261018b5760205f54604051908152f35b3461018b57602036600319011261018b576004355f55005b3461018b575f36600319011261018b576020905f548152f3fea264697066735822122037d4ebe5e30e4700c34d15f2ff10034c81938457a3b6deb7feaf13a7871d972f64736f6c634300081e0033",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE PUSH2 0x1A7 JUMPI PUSH2 0x11 PUSH2 0x1AB JUMP JUMPDEST PUSH1 0x7 DUP2 MSTORE PUSH2 0x1D PUSH2 0x1AB JUMP JUMPDEST SWAP1 PUSH1 0x3 DUP3 MSTORE PUSH3 0x14185D PUSH1 0xEA SHL PUSH1 0x20 DUP4 ADD MSTORE DUP2 PUSH1 0x20 DUP3 ADD MSTORE MLOAD PUSH1 0x1 SSTORE DUP1 MLOAD PUSH1 0x1 DUP1 PUSH1 0x40 SHL SUB DUP2 GT PUSH2 0x193 JUMPI PUSH1 0x2 SLOAD PUSH1 0x1 DUP2 DUP2 SHR SWAP2 AND DUP1 ISZERO PUSH2 0x189 JUMPI JUMPDEST PUSH1 0x20 DUP3 LT EQ PUSH2 0x175 JUMPI PUSH1 0x1F DUP2 GT PUSH2 0x112 JUMPI JUMPDEST POP PUSH1 0x20 SWAP2 PUSH1 0x1F DUP3 GT PUSH1 0x1 EQ PUSH2 0xB2 JUMPI SWAP2 DUP2 SWAP3 PUSH0 SWAP3 PUSH2 0xA7 JUMPI JUMPDEST POP POP DUP2 PUSH1 0x1 SHL SWAP2 PUSH0 NOT SWAP1 PUSH1 0x3 SHL SHR NOT AND OR PUSH1 0x2 SSTORE JUMPDEST PUSH1 0x40 MLOAD PUSH2 0x212 SWAP1 DUP2 PUSH2 0x1CB DUP3 CODECOPY RETURN JUMPDEST ADD MLOAD SWAP1 POP PUSH0 DUP1 PUSH2 0x83 JUMP JUMPDEST PUSH1 0x1F NOT DUP3 AND SWAP3 PUSH1 0x2 PUSH0 MSTORE DUP1 PUSH0 KECCAK256 SWAP2 PUSH0 JUMPDEST DUP6 DUP2 LT PUSH2 0xFA JUMPI POP DUP4 PUSH1 0x1 SWAP6 LT PUSH2 0xE2 JUMPI JUMPDEST POP POP POP DUP2 SHL ADD PUSH1 0x2 SSTORE PUSH2 0x98 JUMP JUMPDEST ADD MLOAD PUSH0 NOT PUSH1 0xF8 DUP5 PUSH1 0x3 SHL AND SHR NOT AND SWAP1 SSTORE PUSH0 DUP1 DUP1 PUSH2 0xD4 JUMP JUMPDEST SWAP2 SWAP3 PUSH1 0x20 PUSH1 0x1 DUP2 SWAP3 DUP7 DUP6 ADD MLOAD DUP2 SSTORE ADD SWAP5 ADD SWAP3 ADD PUSH2 0xC2 JUMP JUMPDEST PUSH1 0x2 PUSH0 MSTORE PUSH32 0x405787FA12A823E0F2B7631CC41B3BA8828B3321CA811111FA75CD3AA3BB5ACE PUSH1 0x1F DUP4 ADD PUSH1 0x5 SHR DUP2 ADD SWAP2 PUSH1 0x20 DUP5 LT PUSH2 0x16B JUMPI JUMPDEST PUSH1 0x1F ADD PUSH1 0x5 SHR ADD SWAP1 JUMPDEST DUP2 DUP2 LT PUSH2 0x160 JUMPI POP PUSH2 0x6A JUMP JUMPDEST PUSH0 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0x153 JUMP JUMPDEST SWAP1 SWAP2 POP DUP2 SWAP1 PUSH2 0x14A JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x22 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST SWAP1 PUSH1 0x7F AND SWAP1 PUSH2 0x58 JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x41 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST PUSH0 DUP1 REVERT JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 SWAP1 DUP3 ADD PUSH1 0x1 PUSH1 0x1 PUSH1 0x40 SHL SUB DUP2 GT DUP4 DUP3 LT OR PUSH2 0x193 JUMPI PUSH1 0x40 MSTORE JUMP INVALID PUSH1 0x80 DUP1 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH2 0x12 JUMPI PUSH0 DUP1 REVERT JUMPDEST PUSH0 CALLDATALOAD PUSH1 0xE0 SHR SWAP1 DUP2 PUSH4 0x2E64CEC1 EQ PUSH2 0x1C3 JUMPI POP DUP1 PUSH4 0x6057361D EQ PUSH2 0x1AB JUMPI DUP1 PUSH4 0x6D83BC57 EQ PUSH2 0x18F JUMPI PUSH4 0xAF16A723 EQ PUSH2 0x48 JUMPI PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH2 0x18B JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH2 0x18B JUMPI PUSH1 0x1 SLOAD PUSH1 0x40 MLOAD PUSH0 SWAP2 PUSH1 0x2 SLOAD SWAP3 DUP4 PUSH1 0x1 SHR PUSH1 0x1 DUP6 AND SWAP5 DUP6 ISZERO PUSH2 0x181 JUMPI JUMPDEST PUSH1 0x20 DUP3 LT DUP7 EQ PUSH2 0x16D JUMPI DUP2 DUP6 MSTORE PUSH1 0x20 DUP6 ADD SWAP6 SWAP1 DUP2 ISZERO PUSH2 0x154 JUMPI POP PUSH1 0x1 EQ PUSH2 0xFF JUMPI JUMPDEST POP DUP3 SWAP1 SUB PUSH1 0x1F ADD PUSH1 0x1F NOT AND DUP3 ADD SWAP3 PUSH8 0xFFFFFFFFFFFFFFFF DUP5 GT DUP4 DUP6 LT OR PUSH2 0xEB JUMPI PUSH1 0x60 SWAP3 DUP5 SWAP3 DUP4 PUSH1 0x40 MSTORE DUP4 MSTORE PUSH1 0x40 PUSH1 0x20 DUP5 ADD MSTORE MLOAD DUP1 SWAP2 DUP2 PUSH1 0x40 DUP6 ADD MSTORE DUP5 DUP5 ADD MCOPY PUSH0 DUP3 DUP3 ADD DUP5 ADD MSTORE PUSH1 0x1F ADD PUSH1 0x1F NOT AND DUP2 ADD SUB ADD SWAP1 RETURN JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x41 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST SWAP1 POP PUSH1 0x2 PUSH0 MSTORE PUSH32 0x405787FA12A823E0F2B7631CC41B3BA8828B3321CA811111FA75CD3AA3BB5ACE PUSH0 SWAP1 JUMPDEST DUP3 DUP3 LT PUSH2 0x13E JUMPI POP PUSH1 0x20 SWAP2 POP DUP4 ADD ADD PUSH0 PUSH2 0x96 JUMP JUMPDEST PUSH1 0x1 DUP2 PUSH1 0x20 SWAP3 SLOAD DUP4 DUP6 DUP10 ADD ADD MSTORE ADD SWAP2 ADD SWAP1 PUSH2 0x129 JUMP JUMPDEST PUSH1 0xFF NOT AND DUP7 MSTORE POP ISZERO ISZERO PUSH1 0x5 SHL DUP4 ADD PUSH1 0x20 ADD SWAP1 POP PUSH0 PUSH2 0x96 JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x22 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST SWAP1 PUSH1 0x7F AND SWAP1 PUSH2 0x74 JUMP JUMPDEST PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH2 0x18B JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH2 0x18B JUMPI PUSH1 0x20 PUSH0 SLOAD PUSH1 0x40 MLOAD SWAP1 DUP2 MSTORE RETURN JUMPDEST CALLVALUE PUSH2 0x18B JUMPI PUSH1 0x20 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH2 0x18B JUMPI PUSH1 0x4 CALLDATALOAD PUSH0 SSTORE STOP JUMPDEST CALLVALUE PUSH2 0x18B JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH2 0x18B JUMPI PUSH1 0x20 SWAP1 PUSH0 SLOAD DUP2 MSTORE RETURN INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 CALLDATACOPY 0xD4 0xEB JUMPF 0xE30E SELFBALANCE STOP 0xC3 0x4D ISZERO CALLCODE SELFDESTRUCT LT SUB 0x4C DUP2 SWAP4 DUP5 JUMPI LOG3 0xB6 0xDE 0xB7 INVALID 0xAF SGT 0xA7 DUP8 SAR SWAP8 0x2F PUSH5 0x736F6C6343 STOP ADDMOD 0x1E STOP CALLER ",
+                        "sourceMap": "57:549:0:-:0;;;;;;;;:::i;:::-;387:1;57:549;;;;:::i;:::-;;;;;-1:-1:-1;;;57:549:0;;;;363:40;57:549;363:40;;57:549;;363:40;57:549;;;;;;;;;;;;;;363:40;57:549;;;;;;;;;-1:-1:-1;57:549:0;;;;;;;;;;;-1:-1:-1;57:549:0;;;;;;;;;;;;;-1:-1:-1;57:549:0;;;;;;;363:40;57:549;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;57:549:0;;;;;;;;;;;-1:-1:-1;57:549:0;;-1:-1:-1;57:549:0;;-1:-1:-1;57:549:0;;;;;;;;363:40;57:549;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;363:40;57:549;;;;;;;;;;;;;;;;;-1:-1:-1;57:549:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;57:549:0;;363:40;57:549;;;;;;-1:-1:-1;57:549:0;;;;;;;;-1:-1:-1;57:549:0;;;;;-1:-1:-1;57:549:0;;;;;;;;;;;;-1:-1:-1;57:549:0;;;;;-1:-1:-1;57:549:0;;;;;;;;;;;;;-1:-1:-1;;;;;57:549:0;;;;;;;;;;:::o"
+                    },
+                    "deployedBytecode": {
+                        "functionDebugData": {},
+                        "generatedSources": [],
+                        "immutableReferences": {},
+                        "linkReferences": {},
+                        "object": "6080806040526004361015610012575f80fd5b5f3560e01c9081632e64cec1146101c3575080636057361d146101ab5780636d83bc571461018f5763af16a72314610048575f80fd5b3461018b575f36600319011261018b576001546040515f91600254928360011c60018516948515610181575b60208210861461016d57818552602085019590811561015457506001146100ff575b50829003601f01601f191682019267ffffffffffffffff8411838510176100eb576060928492836040528352604060208401525180918160408501528484015e5f828201840152601f01601f19168101030190f35b634e487b7160e01b5f52604160045260245ffd5b905060025f527f405787fa12a823e0f2b7631cc41b3ba8828b3321ca811111fa75cd3aa3bb5ace5f905b82821061013e5750602091508301015f610096565b6001816020925483858901015201910190610129565b60ff1916865250151560051b830160200190505f610096565b634e487b7160e01b5f52602260045260245ffd5b90607f1690610074565b5f80fd5b3461018b575f36600319011261018b5760205f54604051908152f35b3461018b57602036600319011261018b576004355f55005b3461018b575f36600319011261018b576020905f548152f3fea264697066735822122037d4ebe5e30e4700c34d15f2ff10034c81938457a3b6deb7feaf13a7871d972f64736f6c634300081e0033",
+                        "opcodes": "PUSH1 0x80 DUP1 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT ISZERO PUSH2 0x12 JUMPI PUSH0 DUP1 REVERT JUMPDEST PUSH0 CALLDATALOAD PUSH1 0xE0 SHR SWAP1 DUP2 PUSH4 0x2E64CEC1 EQ PUSH2 0x1C3 JUMPI POP DUP1 PUSH4 0x6057361D EQ PUSH2 0x1AB JUMPI DUP1 PUSH4 0x6D83BC57 EQ PUSH2 0x18F JUMPI PUSH4 0xAF16A723 EQ PUSH2 0x48 JUMPI PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH2 0x18B JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH2 0x18B JUMPI PUSH1 0x1 SLOAD PUSH1 0x40 MLOAD PUSH0 SWAP2 PUSH1 0x2 SLOAD SWAP3 DUP4 PUSH1 0x1 SHR PUSH1 0x1 DUP6 AND SWAP5 DUP6 ISZERO PUSH2 0x181 JUMPI JUMPDEST PUSH1 0x20 DUP3 LT DUP7 EQ PUSH2 0x16D JUMPI DUP2 DUP6 MSTORE PUSH1 0x20 DUP6 ADD SWAP6 SWAP1 DUP2 ISZERO PUSH2 0x154 JUMPI POP PUSH1 0x1 EQ PUSH2 0xFF JUMPI JUMPDEST POP DUP3 SWAP1 SUB PUSH1 0x1F ADD PUSH1 0x1F NOT AND DUP3 ADD SWAP3 PUSH8 0xFFFFFFFFFFFFFFFF DUP5 GT DUP4 DUP6 LT OR PUSH2 0xEB JUMPI PUSH1 0x60 SWAP3 DUP5 SWAP3 DUP4 PUSH1 0x40 MSTORE DUP4 MSTORE PUSH1 0x40 PUSH1 0x20 DUP5 ADD MSTORE MLOAD DUP1 SWAP2 DUP2 PUSH1 0x40 DUP6 ADD MSTORE DUP5 DUP5 ADD MCOPY PUSH0 DUP3 DUP3 ADD DUP5 ADD MSTORE PUSH1 0x1F ADD PUSH1 0x1F NOT AND DUP2 ADD SUB ADD SWAP1 RETURN JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x41 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST SWAP1 POP PUSH1 0x2 PUSH0 MSTORE PUSH32 0x405787FA12A823E0F2B7631CC41B3BA8828B3321CA811111FA75CD3AA3BB5ACE PUSH0 SWAP1 JUMPDEST DUP3 DUP3 LT PUSH2 0x13E JUMPI POP PUSH1 0x20 SWAP2 POP DUP4 ADD ADD PUSH0 PUSH2 0x96 JUMP JUMPDEST PUSH1 0x1 DUP2 PUSH1 0x20 SWAP3 SLOAD DUP4 DUP6 DUP10 ADD ADD MSTORE ADD SWAP2 ADD SWAP1 PUSH2 0x129 JUMP JUMPDEST PUSH1 0xFF NOT AND DUP7 MSTORE POP ISZERO ISZERO PUSH1 0x5 SHL DUP4 ADD PUSH1 0x20 ADD SWAP1 POP PUSH0 PUSH2 0x96 JUMP JUMPDEST PUSH4 0x4E487B71 PUSH1 0xE0 SHL PUSH0 MSTORE PUSH1 0x22 PUSH1 0x4 MSTORE PUSH1 0x24 PUSH0 REVERT JUMPDEST SWAP1 PUSH1 0x7F AND SWAP1 PUSH2 0x74 JUMP JUMPDEST PUSH0 DUP1 REVERT JUMPDEST CALLVALUE PUSH2 0x18B JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH2 0x18B JUMPI PUSH1 0x20 PUSH0 SLOAD PUSH1 0x40 MLOAD SWAP1 DUP2 MSTORE RETURN JUMPDEST CALLVALUE PUSH2 0x18B JUMPI PUSH1 0x20 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH2 0x18B JUMPI PUSH1 0x4 CALLDATALOAD PUSH0 SSTORE STOP JUMPDEST CALLVALUE PUSH2 0x18B JUMPI PUSH0 CALLDATASIZE PUSH1 0x3 NOT ADD SLT PUSH2 0x18B JUMPI PUSH1 0x20 SWAP1 PUSH0 SLOAD DUP2 MSTORE RETURN INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 CALLDATACOPY 0xD4 0xEB JUMPF 0xE30E SELFBALANCE STOP 0xC3 0x4D ISZERO CALLCODE SELFDESTRUCT LT SUB 0x4C DUP2 SWAP4 DUP5 JUMPI LOG3 0xB6 0xDE 0xB7 INVALID 0xAF SGT 0xA7 DUP8 SAR SWAP8 0x2F PUSH5 0x736F6C6343 STOP ADDMOD 0x1E STOP CALLER ",
+                        "sourceMap": "57:549:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;57:549:0;;;;338:65;57:549;;;;;338:65;57:549;;;338:65;57:549;338:65;57:549;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;57:549:0;;;;;-1:-1:-1;;57:549:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;57:549:0;;;;;;;;;;;;;;;;;;;;;;338:65;57:549;;;;;;;;;;;;;;;;;;;;;;338:65;57:549;;;;;;;;;;;;;;;;;-1:-1:-1;;57:549:0;;;-1:-1:-1;57:549:0;;;;;;;;;-1:-1:-1;57:549:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;57:549:0;;;;;;;;;;;;;;;;;;;-1:-1:-1;;57:549:0;;;;;;;;;;;;;;;-1:-1:-1;;57:549:0;;;;;;;;;;"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "106000",
+                            "executionCost": "infinite",
+                            "totalCost": "infinite"
+                        },
+                        "external": {
+                            "myFavoriteNumber()": "2299",
+                            "myFriend()": "infinite",
+                            "retrieve()": "2247",
+                            "store(uint256)": "22260"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "myFavoriteNumber()": "6d83bc57",
+                        "myFriend()": "af16a723",
+                        "retrieve()": "2e64cec1",
+                        "store(uint256)": "6057361d"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"myFavoriteNumber\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"myFriend\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"favoriteNumber\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"retrieve\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_favoriteNumber\",\"type\":\"uint256\"}],\"name\":\"store\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol\":{\"keccak256\":\"0x3bd955614d3b30679a7f55b514996a6eab793540b6cb653ccb38ba0ea6ea58eb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://417fe9469d3d08ceef92e6a7e1face859afbf20d4680729c3908e39e6e6464fb\",\"dweb:/ipfs/QmZ9oCohg1KhnAFS453VCmcLWUKZ9wZ7PJWyTXCbM9EfTt\"]}},\"version\":1}",
+                "storageLayout": {
+                    "storage": [
+                        {
+                            "astId": 3,
+                            "contract": "/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol:SimpleStorage",
+                            "label": "myFavoriteNumber",
+                            "offset": 0,
+                            "slot": "0",
+                            "type": "t_uint256"
+                        },
+                        {
+                            "astId": 15,
+                            "contract": "/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol:SimpleStorage",
+                            "label": "myFriend",
+                            "offset": 0,
+                            "slot": "1",
+                            "type": "t_struct(Person)8_storage"
+                        }
+                    ],
+                    "types": {
+                        "t_string_storage": {
+                            "encoding": "bytes",
+                            "label": "string",
+                            "numberOfBytes": "32"
+                        },
+                        "t_struct(Person)8_storage": {
+                            "encoding": "inplace",
+                            "label": "struct SimpleStorage.Person",
+                            "members": [
+                                {
+                                    "astId": 5,
+                                    "contract": "/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol:SimpleStorage",
+                                    "label": "favoriteNumber",
+                                    "offset": 0,
+                                    "slot": "0",
+                                    "type": "t_uint256"
+                                },
+                                {
+                                    "astId": 7,
+                                    "contract": "/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol:SimpleStorage",
+                                    "label": "name",
+                                    "offset": 0,
+                                    "slot": "1",
+                                    "type": "t_string_storage"
+                                }
+                            ],
+                            "numberOfBytes": "64"
+                        },
+                        "t_uint256": {
+                            "encoding": "inplace",
+                            "label": "uint256",
+                            "numberOfBytes": "32"
+                        }
+                    }
+                },
+                "userdoc": {
+                    "kind": "user",
+                    "methods": {},
+                    "version": 1
+                }
+            }
+        }
+    },
+    "sources": {
+        "/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol": {
+            "ast": {
+                "absolutePath": "/home/mcwachira/Documents/GitHub/learning-solidity/SimpleStorage/SimpleStorage.sol",
+                "exportedSymbols": {
+                    "SimpleStorage": [
+                        34
+                    ]
+                },
+                "id": 35,
+                "license": "MIT",
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.8",
+                            ".2"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "32:23:0"
+                    },
+                    {
+                        "abstract": false,
+                        "baseContracts": [],
+                        "canonicalName": "SimpleStorage",
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "fullyImplemented": true,
+                        "id": 34,
+                        "linearizedBaseContracts": [
+                            34
+                        ],
+                        "name": "SimpleStorage",
+                        "nameLocation": "66:13:0",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "constant": false,
+                                "functionSelector": "6d83bc57",
+                                "id": 3,
+                                "mutability": "mutable",
+                                "name": "myFavoriteNumber",
+                                "nameLocation": "150:16:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 34,
+                                "src": "135:31:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "uint256",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "135:7:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "canonicalName": "SimpleStorage.Person",
+                                "id": 8,
+                                "members": [
+                                    {
+                                        "constant": false,
+                                        "id": 5,
+                                        "mutability": "mutable",
+                                        "name": "favoriteNumber",
+                                        "nameLocation": "290:14:0",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 8,
+                                        "src": "282:22:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint256",
+                                            "typeString": "uint256"
+                                        },
+                                        "typeName": {
+                                            "id": 4,
+                                            "name": "uint256",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "282:7:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    },
+                                    {
+                                        "constant": false,
+                                        "id": 7,
+                                        "mutability": "mutable",
+                                        "name": "name",
+                                        "nameLocation": "321:4:0",
+                                        "nodeType": "VariableDeclaration",
+                                        "scope": 8,
+                                        "src": "314:11:0",
+                                        "stateVariable": false,
+                                        "storageLocation": "default",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        },
+                                        "typeName": {
+                                            "id": 6,
+                                            "name": "string",
+                                            "nodeType": "ElementaryTypeName",
+                                            "src": "314:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_storage_ptr",
+                                                "typeString": "string"
+                                            }
+                                        },
+                                        "visibility": "internal"
+                                    }
+                                ],
+                                "name": "Person",
+                                "nameLocation": "265:6:0",
+                                "nodeType": "StructDefinition",
+                                "scope": 34,
+                                "src": "258:74:0",
+                                "visibility": "public"
+                            },
+                            {
+                                "constant": false,
+                                "functionSelector": "af16a723",
+                                "id": 15,
+                                "mutability": "mutable",
+                                "name": "myFriend",
+                                "nameLocation": "352:8:0",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 34,
+                                "src": "338:65:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Person_$8_storage",
+                                    "typeString": "struct SimpleStorage.Person"
+                                },
+                                "typeName": {
+                                    "id": 10,
+                                    "nodeType": "UserDefinedTypeName",
+                                    "pathNode": {
+                                        "id": 9,
+                                        "name": "Person",
+                                        "nameLocations": [
+                                            "338:6:0"
+                                        ],
+                                        "nodeType": "IdentifierPath",
+                                        "referencedDeclaration": 8,
+                                        "src": "338:6:0"
+                                    },
+                                    "referencedDeclaration": 8,
+                                    "src": "338:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Person_$8_storage_ptr",
+                                        "typeString": "struct SimpleStorage.Person"
+                                    }
+                                },
+                                "value": {
+                                    "arguments": [
+                                        {
+                                            "hexValue": "37",
+                                            "id": 12,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "number",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "387:1:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_rational_7_by_1",
+                                                "typeString": "int_const 7"
+                                            },
+                                            "value": "7"
+                                        },
+                                        {
+                                            "hexValue": "506174",
+                                            "id": 13,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "string",
+                                            "lValueRequested": false,
+                                            "nodeType": "Literal",
+                                            "src": "396:5:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_stringliteral_17bbd3952f47c0d94ace8a7819b1a9adcd6ea0341dae2929ff85cd761e104720",
+                                                "typeString": "literal_string \"Pat\""
+                                            },
+                                            "value": "Pat"
+                                        }
+                                    ],
+                                    "expression": {
+                                        "argumentTypes": [
+                                            {
+                                                "typeIdentifier": "t_rational_7_by_1",
+                                                "typeString": "int_const 7"
+                                            },
+                                            {
+                                                "typeIdentifier": "t_stringliteral_17bbd3952f47c0d94ace8a7819b1a9adcd6ea0341dae2929ff85cd761e104720",
+                                                "typeString": "literal_string \"Pat\""
+                                            }
+                                        ],
+                                        "id": 11,
+                                        "name": "Person",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 8,
+                                        "src": "363:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_type$_t_struct$_Person_$8_storage_ptr_$",
+                                            "typeString": "type(struct SimpleStorage.Person storage pointer)"
+                                        }
+                                    },
+                                    "id": 14,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "structConstructorCall",
+                                    "lValueRequested": false,
+                                    "nameLocations": [
+                                        "371:14:0",
+                                        "390:4:0"
+                                    ],
+                                    "names": [
+                                        "favoriteNumber",
+                                        "name"
+                                    ],
+                                    "nodeType": "FunctionCall",
+                                    "src": "363:40:0",
+                                    "tryCall": false,
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_struct$_Person_$8_memory_ptr",
+                                        "typeString": "struct SimpleStorage.Person memory"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 24,
+                                    "nodeType": "Block",
+                                    "src": "457:51:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 22,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "id": 20,
+                                                    "name": "myFavoriteNumber",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 3,
+                                                    "src": "467:16:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "id": 21,
+                                                    "name": "_favoriteNumber",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 17,
+                                                    "src": "486:15:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint256",
+                                                        "typeString": "uint256"
+                                                    }
+                                                },
+                                                "src": "467:34:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "id": 23,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "467:34:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "6057361d",
+                                "id": 25,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "store",
+                                "nameLocation": "419:5:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 18,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 17,
+                                            "mutability": "mutable",
+                                            "name": "_favoriteNumber",
+                                            "nameLocation": "433:15:0",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 25,
+                                            "src": "425:23:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 16,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "425:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "424:25:0"
+                                },
+                                "returnParameters": {
+                                    "id": 19,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "457:0:0"
+                                },
+                                "scope": 34,
+                                "src": "410:98:0",
+                                "stateMutability": "nonpayable",
+                                "virtual": false,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 32,
+                                    "nodeType": "Block",
+                                    "src": "564:40:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "id": 30,
+                                                "name": "myFavoriteNumber",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 3,
+                                                "src": "581:16:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "functionReturnParameters": 29,
+                                            "id": 31,
+                                            "nodeType": "Return",
+                                            "src": "574:23:0"
+                                        }
+                                    ]
+                                },
+                                "functionSelector": "2e64cec1",
+                                "id": 33,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "retrieve",
+                                "nameLocation": "523:8:0",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 26,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "531:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 29,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 28,
+                                            "mutability": "mutable",
+                                            "name": "",
+                                            "nameLocation": "-1:-1:-1",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 33,
+                                            "src": "555:7:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 27,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "555:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "554:9:0"
+                                },
+                                "scope": 34,
+                                "src": "514:90:0",
+                                "stateMutability": "view",
+                                "virtual": false,
+                                "visibility": "public"
+                            }
+                        ],
+                        "scope": 35,
+                        "src": "57:549:0",
+                        "usedErrors": [],
+                        "usedEvents": []
+                    }
+                ],
+                "src": "32:575:0"
+            },
+            "id": 0
+        }
+    }
+}
