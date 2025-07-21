@@ -1,0 +1,98 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createSimpleStorageContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfSimpleStorageContracts",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newSimpleStorageNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "sfStore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/StorageFactory.sol": "StorageFactory"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SimpleStorage.sol": {
+			"keccak256": "0x231f569748ef826d5ab83d614e08e8fb7846a7aa1ba7f904bd3956c717afc60a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2c74f7184dc6d43b92759ad08b4b53b6c6bfe33ed533f17ea91ce931c8cce31e",
+				"dweb:/ipfs/QmR64dKA5a8G4ae8Hb6igDF14drzvtxun6vJ5FrFvg42y1"
+			]
+		},
+		"contracts/StorageFactory.sol": {
+			"keccak256": "0x56ae6d931e5db58960ad7ca642280b1626c6249c9bdbc61850e7aecfe462d5fd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e605c5fe8ee8773ac7cc8a2114992ccd5864ed09ca409afeb808dd142f9b0aaf",
+				"dweb:/ipfs/QmdLPoX6eu4jr944D2WjoYJGNic7tGYx3bGdeHAoCTKuUr"
+			]
+		}
+	},
+	"version": 1
+}
